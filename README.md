@@ -1,5 +1,5 @@
 # backend-node-plantilla-rest
-Esto es un backend-rest en node y express básico
+Esto es un backend-rest básico en node y express.
 
 Ejecutar ```npm install``` para reconstruir modulos de node.
 
