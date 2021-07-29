@@ -8,7 +8,6 @@ class Server {
     this.port = process.env.PORT;
     this.usuariosPath = "/api/usuarios";
 
-
     //Middleware
     this.middlewares();
     //Rutas de mi aplicación
@@ -20,10 +19,7 @@ class Server {
     this.app.use(cors());
 
     //Parseo y lectura del body
-    this.app.use( express.json() )
-
-
-
+    this.app.use(express.json());
 
     //Directorio Público
     this.app.use(express.static("public"));
@@ -38,8 +34,6 @@ class Server {
       console.log("Servidor corriendo en el puerto", this.port);
     });
   }
-
-
 }
 
 module.exports = Server;
